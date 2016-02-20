@@ -1,6 +1,8 @@
 SEMET, Segurança e Medicina no Trabalho
 =======================================
 
+[![Build Status](https://travis-ci.org/semetpt/semet.pt.svg?branch=master)](https://travis-ci.org/semetpt/semet.pt)
+
 Source code for [our website](http://semet.pt).
 
 Issues
