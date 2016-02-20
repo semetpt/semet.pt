@@ -4,6 +4,7 @@ ruby '2.3.0'
 
 gem 'middleman', '>= 4.0.0'
 gem 'middleman-livereload'
+gem 'rake'
 gem 'slim'
 
 # For Windows
