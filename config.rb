@@ -42,3 +42,8 @@ configure :build do
   # Minify Javascript on build
   # activate :minify_javascript
 end
+
+activate :deploy do |c|
+  c.deploy_method = :git
+  c.build_before = true
+end
