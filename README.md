@@ -2,6 +2,8 @@ SEMET, Segurança e Medicina no Trabalho
 =======================================
 
 [![Build Status](https://travis-ci.org/semetpt/semet.pt.svg?branch=master)](https://travis-ci.org/semetpt/semet.pt)
+[![Code Climate](https://codeclimate.com/github/semetpt/semet.pt/badges/gpa.svg)](https://codeclimate.com/github/semetpt/semet.pt)
+[![Dependency Status](https://gemnasium.com/semetpt/semet.pt.svg)](https://gemnasium.com/semetpt/semet.pt)
 
 Source code for [our website](http://semet.pt).
 
