@@ -1,0 +1,93 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap/3.3.1/css/bootstrap.min.css">
+		<style>
+			html {
+				position: relative;
+				min-height: 100%;
+			}
+
+			body {
+				background-color: #eee;
+			}
+
+			span.space:after {
+				content: " ";
+			}
+
+			footer .glyphicon {
+				padding: 0 0.5em;
+			}
+
+			footer ul.numbers {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+
+			#page-footer {
+				bottom: 0;
+				position: absolute;
+				width: 100%;
+			}
+
+			#page-footer .container {
+				margin: 0 auto;
+			}
+		</style>
+		<title>SEMET - Segurança e Medicina no Trabalho, Lda</title>
+	</head>
+	<body>
+		<main class="container">
+			<header class="jumbotron clearfix">
+				<h1>SEMET<br><small>Segurança e Medicina no Trabalho, Lda</small></h1>
+				<p>Estamos a atualizar o nosso site para o servir melhor. Obrigado pela paciência.</p>
+			</header>
+		</main>
+		<footer id="page-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 col-xs-12 text-left">
+						<p><img src="img/logo.png" alt="SEMET, Segurança e Medicina no Trabalho, Lda"></p>
+						<p>Rua Augusto Correia, n.º 50, 2º andar, Sala A<br>4760-125 Vila Nova de Famalicão</p>
+						<p>
+							<ul class="numbers">
+								<li><span class="glyphicon glyphicon-phone-alt"></span>252<span class="space"></span>316<span class="space"></span>738</li>
+								<li><span class="glyphicon glyphicon-phone-alt"></span>252<span class="space"></span>374<span class="space"></span>436</li>
+								<li><span class="glyphicon glyphicon-list-alt"></span>252<span class="space"></span>375<span class="space"></span>723</li>
+							</ul>
+						</p>
+						<p><span class="glyphicon glyphicon-inbox"></span>geral@semet.pt</p>
+					</div>
+					<div class="col-sm-6 col-xs-12 text-right">
+						<p><img src="img/LogoSemet.png" alt="SEMET Formação"></p>
+						<p>
+							<ul class="numbers">
+								<li>969<span class="space"></span>038<span class="space"></span>851<span class="glyphicon glyphicon-earphone"></span></li>
+							</ul>
+						</p>
+						<p>formacao@semet.pt<span class="glyphicon glyphicon-inbox"></span></p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="//cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
+		<script>
+			;(function($){
+				$(function(){
+					var $body = $("body");
+					var $footer = $("#page-footer");
+					var height = $footer.height() + "px";
+
+					$body.css("margin-bottom", height);
+					$footer.css("height", height);
+				});
+			})(jQuery);
+		</script>
+	</body>
+</html>
