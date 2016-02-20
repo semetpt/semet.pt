@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>SEMET</title>
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+
+
+<!--VALIDA FORMULÁRIO-->
+
+<script language="JavaScript" >
+function enviardados(){
+
+if( document.dados.email.value=="" || document.dados.email.value.indexOf('@')==-1 || document.dados.email.value.indexOf('.')==-1 )
+{
+alert( "Preencha campo E-MAIL corretamente!" );
+document.dados.email.focus();
+return false;
+}
+
+if( document.dados.telefone.value=="" || document.dados.telefone.value.length < 9 )
+{
+alert( "Preencha campo telefone corretamente!" );
+document.dados.telefone.focus();
+return false;
+}
+
+
+
+if(document.dados.Contacto.value=="" || document.dados.Contacto.value.length < 8)
+{
+alert( "Preencha campo Contacto corretamente!" );
+document.dados.Contacto.focus();
+return false;
+}
+
+
+
+if (document.dados.descricao.value=="")
+{
+alert( "Preencha o campo MENSAGEM!" );
+document.dados.descricao.focus();
+return false;
+}
+
+if (document.dados.tx_mensagem.value.length < 20 )
+{
+alert( "É necessario preencher o campo MENSAGEM com mais de 20 caracteres!" );
+document.dados.tx_mensagem.focus();
+return false;
+}
+
+return true;
+}
+
+</script>
+
+
+
+</head>
+<body>
+<div id="wrapper">
+	
+	<div id="header">
+		<div id="logo"><h1>&nbsp;</h1>
+		  <div id="menu">
+		    <ul>
+			<li ><a href="index.html">Home</a></li>
+			<li ><a href="missao.html">MiSSÃO</a></li>
+			<li><a href="valores.html">Valores</a></li>
+			<li><a href="historial.html">Historial</a></li>
+			<li><a href="productos.html">Produtos</a></li>
+			<li class="current_page_item"><a href="contactos.html">Contactos</a></li>
+		</ul>
+	</div>
+	<!-- end #menu -->
+    </div>
+    </div>
+	<div id="page">
+	<div id="page-bgtop">
+	<div id="page-bgbtm">
+		<div id="content">
+			<div class="post">
+				<h2 class="title"><a href="#">Informação</a></h2>
+				<p>&nbsp;</p>
+				<div style="clear: both;">
+				 
+				  <form id="form1" method="post" name="dados" action="formmail.php" onSubmit="return enviardados();">
+				    <p>
+				      <label>Contacto e-mail:
+				        <input name="email" type="text" id="email"  />
+			          </label>
+			        </p>
+				    <p>
+				      <label>Contacto Telefone:
+				        <input name="telefone" type="text" id="telefone" />
+			          </label>
+				    </p>
+				    <p>
+				      <label>Pessoa de Contacto:
+				        <input name="Contacto" type="text" id="Contacto"  />
+			          </label>
+				    </p>
+				    <p>
+				      <label>Descrição:<br />
+				        <textarea name="descricao" cols="45" rows="5" id="descricao" ></textarea>
+			          </label>
+			        </p>
+				    <p>
+				      <label>
+				        <td colspan=2>
+							<input type='submit' value='Enviar >>'>
+							<input type='hidden' name='para' value='hugobraz92@hotmail.com'>
+							<input type='hidden' name='assunto' value='Assunto: Site'>
+							<input type='hidden' name='retorno' value='teste.html'></td>
+						</tr>
+			          </label>
+				      <label>
+				        <input type="reset" name="limpar" id="limpar" value="Apagar" />
+			          </label>
+			        </p>
+					<tr>
+
+			      </form>
+				</div>
+				<div class="entry">
+					<p>&nbsp;</p>
+</div>
+			</div>
+			<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		</div>
+		<!-- end #content -->
+	<div id="sidebar">
+			<ul>
+				<li>
+				  <div style="clear: both;">&nbsp;</div>
+				</li>
+				<li>
+					<h2>&nbsp;</h2>
+			  </li>
+			  <li>
+<h2>&nbsp;</h2>
+				  <ul>
+					 <li><a href="imagens.html">Imagens</a></li>
+                      <li><a href="parceiros.html">Parceiros</a></li>
+					  <li><a href="form.html">Informações</a></li>
+				  </ul>
+			  </li>
+				<li>
+					<h2>&nbsp;</h2>
+				</li>
+				<li> </li>
+		  </ul>
+		</div>
+		<!-- end #sidebar -->
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	</div>
+	</div>
+	<!-- end #page -->
+</div>
+<div id="footer">
+
+		<p><a>Powered by ABMN,Lda <script type="text/javascript">
+
+var d = new Date();
+
+//Ano
+var ano = d.getFullYear();
+
+// Formato final da data a aparecer no browser
+document.write(ano).style.height = 'bold'
+</script>
+All rights reserved.</a>
+</p>
+		
+
+		
+	</div>
+<!-- end #footer -->
+</body>
+</html>

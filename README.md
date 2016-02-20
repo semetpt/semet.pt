@@ -1,5 +1,6 @@
 SEMET, Segurança e Medicina no Trabalho
 =======================================
 
-Source code for [our website](http://semet.pt).
+Source code of for our old website.
 
+Authors unknown.
