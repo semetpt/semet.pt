@@ -4,6 +4,7 @@ ruby '2.3.0'
 
 gem 'middleman', '>= 4.0.0'
 gem 'middleman-deploy', git: 'https://github.com/semetpt/middleman-deploy'
+gem 'middleman-favicon-maker'
 gem 'middleman-livereload'
 gem 'rake'
 gem 'slim'
