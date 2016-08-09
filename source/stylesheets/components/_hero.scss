@@ -1,0 +1,22 @@
+$Hero-top-color: rgba(#000000, 0.5);
+$Hero-bottom-color: rgba(#000000, 0.9);
+
+.Hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, $Hero-top-color, $Hero-bottom-color), image-url('home/hero.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  & > *:not(:last-child) {
+    margin-right: $Theme-spacing-xLarge;
+  }
+}
+
+.Hero-separator {
+  width: 2px;
+  height: 200px;
+  background: linear-gradient(to bottom, transparent 0%, white 25%, white 75%, transparent 100%);
+}
