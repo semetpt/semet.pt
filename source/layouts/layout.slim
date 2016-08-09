@@ -7,9 +7,10 @@ html
 
     title = current_page.data.title || 'SEMET'
 
+    = partial "layouts/favicon"
+
     link href="https://fonts.googleapis.com/css?family=Roboto:100i" rel="stylesheet"
 
-    = partial 'layouts/favicon'
     = stylesheet_link_tag :site
     = javascript_include_tag :all
 
