@@ -1,0 +1,6 @@
+{
+  "name": "semet.pt",
+  "dependencies": {
+    "retinajs": "^2.1.0"
+  }
+}

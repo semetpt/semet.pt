@@ -1,0 +1,20 @@
+#!/usr/bin/env sh
+
+# Load the correct Node version from NVM if available
+if which nvm &> /dev/null; then
+  nvm use
+fi
+
+# Load the correct Ruby version from rbenv if available
+if which nvm &> /dev/null; then
+  rbenv rehash
+fi
+
+# Install Node modules
+npm install
+
+# Install Bower components
+$(npm bin)/bower install
+
+# Install Ruby gems
+bundle install

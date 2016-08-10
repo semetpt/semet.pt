@@ -26,6 +26,8 @@ if defined? RailsAssets
   end
 end
 
+sprockets.append_path File.join(root, 'bower_components')
+
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
