@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 ruby '2.3.1'
 
 gem 'middleman', '>= 4.0.0'
+gem 'middleman-autoprefixer'
 gem 'middleman-deploy', git: 'https://github.com/semetpt/middleman-deploy'
 gem 'middleman-favicon-maker'
 gem 'middleman-livereload'
