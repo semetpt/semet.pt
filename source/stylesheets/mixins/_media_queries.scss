@@ -1,0 +1,11 @@
+@mixin desktop {
+  @include media('>=desktop') {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @include media('<desktop') {
+    @content;
+  }
+}

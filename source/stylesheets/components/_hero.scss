@@ -3,20 +3,60 @@ $Hero-bottom-color: rgba(#000000, 0.9);
 
 .Hero {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  padding-right: $Theme-spacing-large;
+  padding-left: $Theme-spacing-large;
   background: linear-gradient(to bottom, $Hero-top-color, $Hero-bottom-color), image-url('home/hero.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 
-  & > *:not(:last-child) {
-    margin-right: $Theme-spacing-xLarge;
+  @include mobile {
+    & > *:not(:last-child) {
+      margin-bottom: $Theme-spacing-large;
+    }
+  }
+
+  @include desktop {
+    flex-direction: row;
+
+    & > *:not(:last-child) {
+      margin-right: $Theme-spacing-xLarge;
+    }
+  }
+}
+
+.Hero-logo {
+  width: 300px;
+  height: 100px;
+  max-width: 100%;
+  background-image: image-url('logo-white.png');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @include desktop {
+    background-position: right center;
   }
 }
 
 .Hero-separator {
-  width: 2px;
-  height: 200px;
-  background: linear-gradient(to bottom, transparent 0%, white 25%, white 75%, transparent 100%);
+  width: 200px;
+  height: 2px;
+  max-width: 100%;
+  background: linear-gradient(to right, transparent 0%, white 25%, white 75%, transparent 100%);
+
+  @include desktop {
+    width: 2px;
+    height: 200px;
+    background: linear-gradient(to bottom, transparent 0%, white 25%, white 75%, transparent 100%);
+  }
+}
+
+.Hero-slogan {
+  max-width: 100%;
+  text-align: center;
 }
