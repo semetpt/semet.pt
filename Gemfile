@@ -13,3 +13,7 @@ gem 'slim'
 # For Windows
 gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 gem 'wdm', '~> 0.1.0', platforms: [:mswin, :mingw]
+
+source 'https://rails-assets.org' do
+  gem 'rails-assets-include-media'
+end

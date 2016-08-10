@@ -19,6 +19,12 @@ page '/*.txt', layout: false
 # General configuration
 activate :sprockets
 
+if defined? RailsAssets
+  RailsAssets.load_paths.each do |path|
+    sprockets.append_path path
+  end
+end
+
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
