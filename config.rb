@@ -20,12 +20,6 @@ page '/*.txt', layout: false
 activate :autoprefixer
 activate :sprockets
 
-if defined? RailsAssets
-  RailsAssets.load_paths.each do |path|
-    sprockets.append_path path
-  end
-end
-
 sprockets.append_path File.join(root, 'bower_components')
 
 # Reload the browser automatically whenever files change
