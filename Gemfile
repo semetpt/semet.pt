@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.3.0'
+ruby '2.3.1'
 
 gem 'middleman', '>= 4.0.0'
 gem 'middleman-deploy', git: 'https://github.com/semetpt/middleman-deploy'
