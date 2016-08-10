@@ -6,6 +6,7 @@ gem 'middleman', '>= 4.0.0'
 gem 'middleman-deploy', git: 'https://github.com/semetpt/middleman-deploy'
 gem 'middleman-favicon-maker'
 gem 'middleman-livereload'
+gem 'middleman-sprockets'
 gem 'rake'
 gem 'slim'
 
