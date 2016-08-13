@@ -1,0 +1,129 @@
+$Contact-map-size: (200px, 300px);
+$Contact-map-values: (
+  flex-basis: $Contact-map-size,
+  width: $Contact-map-size,
+  height: $Contact-map-size,
+);
+
+.Contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  & > .Contact-map {
+    display: none;
+  }
+
+  @include desktop {
+    flex-direction: row;
+
+    & > .Contact-map {
+      display: block;
+    }
+
+    & > .Contact-title {
+      display: none;
+    }
+  }
+}
+
+.Contact-address,
+.Contact-email,
+.Contact-fax,
+.Contact-phone {
+  $size: theme-spacing(small);
+
+  @include theme-typography();
+
+  position: relative;
+  padding-left: 2em;
+
+  &:not(:last-child) {
+    margin-bottom: $size;
+  }
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2em;
+    height: 1.5em;
+    line-height: 1.5;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto 1em;
+  }
+}
+
+.Contact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  & > .Contact-title {
+    display: none;
+  }
+
+  @include desktop {
+    & > .Contact-map {
+      display: none;
+    }
+
+    & > .Contact-title {
+      display: block;
+    }
+  }
+}
+
+.Contact-info {
+  width: 100%;
+  list-style: none;
+}
+
+.Contact-map {
+  @include responsive-values($Contact-map-values);
+
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.Contact-title {
+  width: 100%;
+  text-align: center;
+
+  @include desktop {
+    text-align: left;
+  }
+}
+
+.Contact.Contact--alternative {
+  @include desktop {
+    .Contact-address,
+    .Contact-email,
+    .Contact-fax,
+    .Contact-phone {
+      padding-right: 2em;
+      padding-left: 0;
+      text-align: right;
+
+      &::before {
+        right: 0;
+        left: auto;
+      }
+    }
+
+    .Contact-title {
+      text-align: right;
+    }
+  }
+}
+
+@each $field in address, email, fax, phone {
+  .Contact-#{$field}::before {
+    background-image: image-url('icons/#{$field}.svg');
+  }
+}

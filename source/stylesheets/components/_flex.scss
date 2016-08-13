@@ -1,0 +1,12 @@
+.Flex {
+  display: flex;
+}
+
+.Flex.Flex--alignCenter {
+  align-items: center;
+  justify-content: center;
+}
+
+.Flex.Flex--column {
+  flex-direction: column;
+}

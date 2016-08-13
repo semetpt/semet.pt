@@ -1,0 +1,15 @@
+.Heading.Heading--centerOnMobile {
+  @include mobile {
+    text-align: center;
+  }
+}
+
+.Heading.Heading--section {
+  @include theme-typography(sectionHeading);
+
+  text-align: center;
+}
+
+.Heading.Heading--title {
+  @include theme-typography(titleHeading);
+}

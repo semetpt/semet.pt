@@ -1,3 +1,17 @@
-$Theme-color-safety: #ff0000;
-$Theme-color-medicine: #00ff00;
-$Theme-color-education: #0000ff;
+$Theme-color-black: #000000;
+$Theme-color-white: #ffffff;
+
+$Theme-palette: (
+  background: (
+    base: $Theme-color-white,
+  ),
+  text: (
+    base: $Theme-color-black,
+  ),
+);
+
+@function theme-color($element, $variant: 'base', $palette: $Theme-palette) {
+  $element-palette: map-get($palette, $element);
+
+  @return map-get($element-palette, $variant);
+}

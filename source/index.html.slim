@@ -1,11 +1,19 @@
 ---
 ---
 
-.Panel.Panel--fold.u-flex
-  .Hero.u-flexGrowable
-    .Hero-logo
-    .Hero-separator
-    .Hero-slogan
-      em.Slogan Há 15 anos a proteger a sua empresa.
+header.Panel.Panel--hero.Panel--fold.u-flex
+  .Flex.Flex-alignCenter.u-fullWidth
+    .Hero
+      .Hero-logo
+      .Hero-separator
+      .Hero-slogan
+        em.Slogan Há 15 anos a proteger a sua empresa
+
+section.Panel
+  .u-hugePushBottom
+  .Flex.Flex--column.Flex--alignCenter
+    .Cage
+      = partial 'home/contacts'
+  .u-hugePushBottom
 
 footer.Footer &copy; SEMET, Segurança e Medicina no Trabalho, Lda

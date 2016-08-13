@@ -1,0 +1,14 @@
+.Address-line,
+.Address-gps {
+  @include theme-typography();
+}
+
+.Address-gps::before {
+  content: 'GPS:';
+  margin-right: theme-spacing(small);
+  font-weight: $Theme-fontWeight-bold;
+}
+
+.Address-lat {
+  margin-right: theme-spacing(small);
+}

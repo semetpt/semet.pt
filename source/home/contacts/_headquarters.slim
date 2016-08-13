@@ -1,0 +1,38 @@
+.Contact
+  .Contact-title.u-basePushBottom
+    h4.Heading.Heading--title Sede
+  .Contact-content
+    .Contact-map.u-basePushBottom
+      = image_tag 'home/mapa-semet.jpg', class: 'Image Image--circle', data: { rjs: 2 }
+    .Contact-title.u-basePushBottom
+      h4.Heading.Heading--title Sede
+    ul.Contact-info
+      li.Contact-address
+        = link_to 'geo:41.408874,-8.520059', class: 'Link'
+          .Address
+            .Address-line
+              | Rua Augusto Correia, n.º 50, 2º andar, Sala A
+            .Address-line
+              | 4760-125 Vila Nova de Famalicão
+            .Address-gps
+              span.Address-lat 41.408874
+              span.Address-lng -8.520059
+      li.Contact-phone
+        = link_to 'tel:+351252316738', class: 'Link'
+          .PhoneNumber
+            span.PhoneNumber-group 252
+            span.PhoneNumber-group 316
+            span.PhoneNumber-group 738
+      li.Contact-phone
+        = link_to 'tel:+351252374436', class: 'Link'
+          = partial 'shared/phone_number', locals: { phone_number: '252 374 436' }
+      li.Contact-fax
+        .PhoneNumber
+          span.PhoneNumber-group 252
+          span.PhoneNumber-group 375
+          span.PhoneNumber-group 723
+      li.Contact-email
+        = link_to 'mailto:geral@semet.pt', class: 'Link'
+          .Text geral@semet.pt
+  .Contact-map
+    = image_tag 'home/mapa-semet.jpg', class: 'Image Image--circle', data: { rjs: 2 }

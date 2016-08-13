@@ -1,5 +1,16 @@
 .Panel {
-  flex-grow: 1;
+  $spacing: theme-spacing(base);
+
+  padding-right: $spacing;
+  padding-left: $spacing;
+  background-color: theme-color(background);
+}
+
+.Panel.Panel--hero {
+  background: linear-gradient(to bottom, $Hero-top-color, $Hero-bottom-color), image-url('home/hero.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .Panel.Panel--fold {

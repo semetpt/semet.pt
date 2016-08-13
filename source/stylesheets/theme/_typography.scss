@@ -1,0 +1,33 @@
+$Theme-fontFamily-roboto: 'Roboto', sans-serif;
+
+$Theme-fontWeight-thin: 100;
+$Theme-fontWeight-regular: 300;
+$Theme-fontWeight-bold: 600;
+
+$Theme-typography: (
+  body: (
+    font-size: (12px, 16px),
+    line-height: (20px, 24px),
+  ),
+  sectionHeading: (
+    font-size: 24px,
+    font-weight: $Theme-fontWeight-bold,
+    letter-spacing: 1px,
+    line-height: 32px,
+    text-transform: uppercase,
+  ),
+  titleHeading: (
+    font-size: 16px,
+    letter-spacing: 1px,
+    line-height: 24px,
+    text-transform: uppercase,
+  ),
+);
+
+@mixin theme-typography($level: 'body', $typography: $Theme-typography) {
+  $values: map-get($typography, $level);
+
+  font-family: $Theme-fontFamily-roboto;
+
+  @include responsive-values($values);
+}

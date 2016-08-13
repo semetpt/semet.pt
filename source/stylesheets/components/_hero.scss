@@ -7,16 +7,10 @@ $Hero-bottom-color: rgba(#000000, 0.9);
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding-right: $Theme-spacing-large;
-  padding-left: $Theme-spacing-large;
-  background: linear-gradient(to bottom, $Hero-top-color, $Hero-bottom-color), image-url('home/hero.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 
   @include mobile {
     & > *:not(:last-child) {
-      margin-bottom: $Theme-spacing-large;
+      margin-bottom: theme-spacing(large);
     }
   }
 
@@ -24,7 +18,7 @@ $Hero-bottom-color: rgba(#000000, 0.9);
     flex-direction: row;
 
     & > *:not(:last-child) {
-      margin-right: $Theme-spacing-xLarge;
+      margin-right: theme-spacing(huge);
     }
   }
 }

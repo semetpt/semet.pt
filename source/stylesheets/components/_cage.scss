@@ -1,0 +1,9 @@
+$Cage-values: (
+  max-width: (300px, 700px),
+);
+
+.Cage {
+  @include responsive-values($Cage-values);
+
+  width: 100%;
+}
