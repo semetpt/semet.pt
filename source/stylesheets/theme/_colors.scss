@@ -3,9 +3,11 @@ $Theme-color-white: #ffffff;
 
 $Theme-palette: (
   background: (
+    alternative: $Theme-color-black,
     base: $Theme-color-white,
   ),
   text: (
+    alternative: $Theme-color-white,
     base: $Theme-color-black,
   ),
 );

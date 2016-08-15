@@ -6,6 +6,10 @@
   background-color: theme-color(background);
 }
 
+.Panel.Panel--alternative {
+  background-color: theme-color(background, alternative);
+}
+
 .Panel.Panel--hero {
   background: linear-gradient(to bottom, $Hero-top-color, $Hero-bottom-color), image-url('home/hero.jpg');
   background-position: center;
