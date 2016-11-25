@@ -2,12 +2,15 @@
 ---
 
 header.Panel.Panel--hero.Panel--fold.u-flex
-  .Flex.Flex-alignCenter.u-fullWidth
-    .Hero
-      .Hero-logo
-      .Hero-separator
-      .Hero-slogan
-        em.Slogan Há 15 anos a proteger a sua empresa
+  .Hero
+    .Hero-topbar
+      = partial "shared/nav_bar"
+    .Hero-content.u-flex
+      .HomeHero
+        .HomeHero-logo
+        .HomeHero-separator
+        .HomeHero-slogan
+          em.Slogan Há 15 anos a proteger a sua empresa
 
 section.Panel
   .u-hugePushBottom

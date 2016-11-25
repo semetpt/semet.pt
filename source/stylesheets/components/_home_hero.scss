@@ -1,0 +1,56 @@
+$HomeHero-top-color: rgba(#000000, 0.5);
+$HomeHero-bottom-color: rgba(#000000, 0.9);
+
+.HomeHero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  @include mobile {
+    & > *:not(:last-child) {
+      margin-bottom: theme-spacing(large);
+    }
+  }
+
+  @include desktop {
+    flex-direction: row;
+
+    & > *:not(:last-child) {
+      margin-right: theme-spacing(huge);
+    }
+  }
+}
+
+.HomeHero-logo {
+  $path: image-path('logo-white.png');
+
+  @include retina($path, 2, contain, center bottom no-repeat);
+
+  width: 300px;
+  height: 100px;
+  max-width: 100%;
+
+  @include desktop {
+    background-position: right center;
+  }
+}
+
+.HomeHero-separator {
+  width: 200px;
+  height: 2px;
+  max-width: 100%;
+  background: linear-gradient(to right, transparent 0%, white 25%, white 75%, transparent 100%);
+
+  @include desktop {
+    width: 2px;
+    height: 200px;
+    background: linear-gradient(to bottom, transparent 0%, white 25%, white 75%, transparent 100%);
+  }
+}
+
+.HomeHero-slogan {
+  max-width: 100%;
+  text-align: center;
+}

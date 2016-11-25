@@ -14,7 +14,7 @@
   $slack: theme-spacing(huge);
 
   min-height: calc(100% - #{$slack});
-  background: linear-gradient(to bottom, $Hero-top-color, $Hero-bottom-color), image-url('home/hero.jpg');
+  background: linear-gradient(to bottom, $HomeHero-top-color, $HomeHero-bottom-color), image-url('home/hero.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
