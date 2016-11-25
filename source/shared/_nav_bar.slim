@@ -1,0 +1,10 @@
+.NavBar
+  .NavBar-back
+  .NavBar-center
+    = link_to "/" do
+      = image_tag "logo-white-small.png",
+        class: "Logo Logo--small",
+        data: { rjs: 2 }
+  .NavBar-burger data-toggle-nav=""
+    = partial "shared/burger"
+

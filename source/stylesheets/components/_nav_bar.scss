@@ -1,0 +1,28 @@
+$NavBar-height: 60px;
+$NavBar-sides-width: $NavBar-height;
+
+.NavBar {
+  display: flex;
+  width: 100%;
+  height: $NavBar-height;
+  padding-top: theme-spacing(small);
+  padding-bottom: theme-spacing(small);
+}
+
+.NavBar-center {
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.NavBar-back,
+.NavBar-burger {
+  flex: 0 0 $NavBar-sides-width;
+  max-width: $NavBar-sides-width;
+}
+
+.NavBar-burger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

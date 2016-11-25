@@ -1,0 +1,35 @@
+$Burger-width: 20px;
+$Burger-height: 2px;
+$Burger-space: theme-spacing(tiny);
+$Burger-transitionDuration: 0.3s;
+$Burger-transition: transform $Burger-transitionDuration ease-in;
+
+.Burger-line {
+  width: $Burger-width;
+  height: $Burger-height;
+  background-color: theme-color(text, alternative);
+  transition: $Burger-transition;
+
+  &:not(:last-child) {
+    margin-bottom: $Burger-space;
+  }
+}
+
+.Burger.is-open .Burger-line {
+  $delta: $Burger-space + $Burger-height;
+
+  &:nth-child(1) {
+    transition: $Burger-transition;
+    transform: translateY($delta) rotate(45deg);
+  }
+
+  &:nth-child(2) {
+    transition: $Burger-transition;
+    transform: scale(0);
+  }
+
+  &:nth-child(3) {
+    transition: $Burger-transition;
+    transform: translateY(- $delta) rotate(-45deg);
+  }
+}

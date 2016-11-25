@@ -2,6 +2,7 @@
   "name": "semet.pt",
   "dependencies": {
     "retinajs": "^2.1.0",
-    "include-media": "^1.4.8"
+    "include-media": "^1.4.8",
+    "jquery": "^3.1.1"
   }
 }
