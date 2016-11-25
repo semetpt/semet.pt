@@ -1,3 +1,13 @@
-#!/usr/bin/env sh
+#!/usr/bin/env ruby
 
-bundle exec middleman deploy
+require "trollop"
+
+opts = Trollop::options do
+  opt :environment,
+    "Target environment configuration",
+    type: :string,
+    default: "staging"
+end
+
+puts "Deploying to #{opts[:environment]}"
+system "bundle exec middleman deploy -e #{opts[:environment]}"

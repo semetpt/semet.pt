@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/semetpt/middleman-deploy
-  revision: 243ab38b08896cd5a37d6845a01a5761b934a898
+  revision: 7acbe273f3d8d4eb02f2eb1b99b4ea910ac06f69
   specs:
-    middleman-deploy (2.0.0.pre.alpha)
+    middleman-deploy (2.0.1.pre.alpha)
       middleman-core (>= 3.2)
       net-sftp
       ptools
@@ -126,6 +126,7 @@ GEM
     thor (0.19.1)
     thread_safe (0.3.5)
     tilt (2.0.5)
+    trollop (2.1.2)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     uglifier (3.0.3)
@@ -142,6 +143,7 @@ DEPENDENCIES
   middleman-sprockets
   rake
   slim
+  trollop
   tzinfo-data
   wdm (~> 0.1.0)
 
