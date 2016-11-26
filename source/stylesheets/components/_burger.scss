@@ -1,8 +1,7 @@
 $Burger-width: 20px;
 $Burger-height: 2px;
 $Burger-space: theme-spacing(tiny);
-$Burger-transitionDuration: 0.3s;
-$Burger-transition: transform $Burger-transitionDuration ease-in;
+$Burger-transition: overlay-transition(transform);
 
 .Burger-line {
   width: $Burger-width;

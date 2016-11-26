@@ -1,0 +1,5 @@
+$overlay-transitionDuration: 0.3s;
+
+@function overlay-transition($property: all) {
+  @return $property $overlay-transitionDuration ease-in;
+}
