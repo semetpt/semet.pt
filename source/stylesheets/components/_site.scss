@@ -8,3 +8,7 @@
     flex: 0 0 auto;
   }
 }
+
+.Site.is-notScrollable {
+  overflow-y: hidden;
+}

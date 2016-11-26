@@ -7,6 +7,7 @@
         = image_tag "logo-white-small.png",
           class: "Logo Logo--small",
           data: { rjs: 2 }
-    .NavBar-burger data-toggle="is-open" data-target=".NavBar, .Burger, .NavOverlay"
-      = partial "shared/burger"
+    .NavBar-burger data-toggle="is-notScrollable" data-target=".Site"
+      div data-toggle="is-open" data-target=".NavBar, .Burger, .NavOverlay"
+        = partial "shared/burger"
 

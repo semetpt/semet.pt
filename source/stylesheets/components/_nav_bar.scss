@@ -2,6 +2,7 @@ $NavBar-height: $topbar-height;
 $NavBar-sides-width: $topbar-height;
 
 .NavBar {
+  width: 100%;
   position: relative;
   z-index: 0;
 }
