@@ -10,9 +10,10 @@ $NavBar-sides-width: $NavBar-height;
 }
 
 .NavBar-center {
-  flex: 1 0 auto;
+  flex: 1 0 0;
   display: flex;
   justify-content: center;
+  max-width: 100%;
 }
 
 .NavBar-back,
@@ -25,4 +26,5 @@ $NavBar-sides-width: $NavBar-height;
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }

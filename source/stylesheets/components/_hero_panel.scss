@@ -1,0 +1,18 @@
+.HeroPanel {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  background: linear-gradient(to bottom, $HomeHero-top-color, $HomeHero-bottom-color), image-url('home/hero.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.HeroPanel-topbar {
+  flex: 0 0 auto;
+}
+
+.HeroPanel-content {
+  flex: 1 0 0;
+}

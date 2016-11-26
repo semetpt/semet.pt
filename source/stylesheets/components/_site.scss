@@ -3,4 +3,8 @@
   flex-direction: column;
   height: 100%;
   background-color: theme-color(background, alternative);
+
+  & > * {
+    flex: 0 0 auto;
+  }
 }

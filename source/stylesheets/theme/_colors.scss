@@ -17,3 +17,6 @@ $Theme-palette: (
 
   @return map-get($element-palette, $variant);
 }
+
+$HomeHero-top-color: rgba(#000000, 0.5);
+$HomeHero-bottom-color: rgba(#000000, 0.9);

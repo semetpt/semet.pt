@@ -1,12 +1,10 @@
-$HomeHero-top-color: rgba(#000000, 0.5);
-$HomeHero-bottom-color: rgba(#000000, 0.9);
-
 .HomeHero {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
+  height: 100%;
 
   @include mobile {
     & > *:not(:last-child) {
