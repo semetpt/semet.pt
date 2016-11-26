@@ -9,13 +9,3 @@
 .Panel.Panel--alternative {
   background-color: theme-color(background, alternative);
 }
-
-.Panel.Panel--hero {
-  $slack: theme-spacing(huge);
-
-  min-height: calc(100% - #{$slack});
-  background: linear-gradient(to bottom, $HomeHero-top-color, $HomeHero-bottom-color), image-url('home/hero.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
