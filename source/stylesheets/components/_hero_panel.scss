@@ -1,9 +1,13 @@
 $HeroPanel-height-desktop: 700px;
 
 .HeroPanel {
+  $side-spacing: theme-spacing();
+
   display: flex;
   flex-direction: column;
   padding-top: $topbar-height;
+  padding-right: $side-spacing;
+  padding-left: $side-spacing;
 
   background: linear-gradient(to bottom, $HomeHero-top-color, $HomeHero-bottom-color), image-url('home/hero.jpg');
   background-position: center;
