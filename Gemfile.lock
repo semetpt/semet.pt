@@ -20,6 +20,7 @@ GEM
     autoprefixer-rails (6.5.3)
       execjs
     backports (3.6.8)
+    builder (3.2.2)
     coffee-script (2.4.1)
       coffee-script-source
       execjs
@@ -93,6 +94,9 @@ GEM
       rack-livereload (~> 0.3.15)
     middleman-robots (1.2.3)
       middleman (>= 4.0)
+    middleman-search_engine_sitemap (1.4.0)
+      builder
+      middleman-core (~> 4.0)
     middleman-sprockets (4.1.0)
       middleman-core (~> 4.0)
       sprockets (>= 3.0)
@@ -143,6 +147,7 @@ DEPENDENCIES
   middleman-deploy!
   middleman-livereload
   middleman-robots
+  middleman-search_engine_sitemap
   middleman-sprockets
   rake
   slim
