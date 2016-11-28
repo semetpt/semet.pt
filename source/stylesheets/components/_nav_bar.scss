@@ -2,9 +2,19 @@ $NavBar-height: $topbar-height;
 $NavBar-sides-width: $topbar-height;
 
 .NavBar {
+  $side-spacing: theme-spacing();
+
   width: 100%;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-right: $side-spacing;
+  padding-left: $side-spacing;
   z-index: 0;
+
+  @include desktop {
+    $side-spacing: theme-spacing(large);
+  }
 }
 
 .NavBar-background {
@@ -27,24 +37,45 @@ $NavBar-sides-width: $topbar-height;
   padding-bottom: theme-spacing(small);
 }
 
-.NavBar-center {
+.NavBar-logo {
   flex: 1 0 0;
   display: flex;
   justify-content: center;
   max-width: 100%;
 }
 
-.NavBar-back,
-.NavBar-burger {
-  flex: 0 0 $NavBar-sides-width;
-  max-width: $NavBar-sides-width;
+.NavBar-links {
+  flex: 1 0 0;
+  display: none;
+  justify-content: flex-end;
+  list-style: none;
+
+  @include desktop {
+    display: flex;
+  }
+}
+
+.NavBar-link {
+  &:not(:last-child) {
+    margin-right: theme-spacing();
+  }
 }
 
 .NavBar-burger {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   cursor: pointer;
+}
+
+.NavBar-back,
+.NavBar-burger {
+  flex: 0 0 $NavBar-sides-width;
+  max-width: $NavBar-sides-width;
+
+  @include desktop {
+    display: none;
+  }
 }
 
 .NavBar.is-open {

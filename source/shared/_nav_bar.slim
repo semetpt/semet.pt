@@ -2,11 +2,14 @@
   .NavBar-background
   .NavBar-content
     .NavBar-back
-    .NavBar-center
+    .NavBar-logo
       = link_to "/", class: "NavLink" do
         = image_tag "logo-white-small.png",
-          class: "Logo Logo--small",
+          class: "Logo",
           data: { rjs: 2 }
+    ul.NavBar-links
+      li.NavBar-link
+        = link_to "Contactos", "#contactos", class: "NavLink"
     .NavBar-burger data-toggle="is-notScrollable" data-target=".Site"
       div data-toggle="is-open" data-target=".NavBar, .Burger, .NavOverlay"
         = partial "shared/burger"

@@ -3,6 +3,7 @@ $HeroPanel-height-desktop: 700px;
 .HeroPanel {
   display: flex;
   flex-direction: column;
+  padding-top: $topbar-height;
 
   background: linear-gradient(to bottom, $HomeHero-top-color, $HomeHero-bottom-color), image-url('home/hero.jpg');
   background-position: center;
@@ -12,10 +13,6 @@ $HeroPanel-height-desktop: 700px;
   @include desktop {
     height: $HeroPanel-height-desktop;
   }
-}
-
-.HeroPanel-topbar {
-  flex: 0 0 auto;
 }
 
 .HeroPanel-content {

@@ -1,7 +1,18 @@
+$NavLink-textColor: theme-color(text, alternative);
+
 .NavLink {
-  color: theme-color(text, alternative);
+  display: inline-flex;
+  align-items: center;
+  padding-top: theme-spacing(small);
+  padding-bottom: theme-spacing(tiny);
+  border-bottom: 2px solid transparent;
+  color: $NavLink-textColor;
   letter-spacing: 2px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+
+  &:hover {
+    border-bottom-color: $NavLink-textColor;
+  }
 }
