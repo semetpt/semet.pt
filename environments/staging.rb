@@ -1,4 +1,5 @@
 configure :build do
+  config[:google_analytics_tracking_id] = "UA-88108121-1";
   config[:url] = "teste.semet.pt"
 
   set :url_root, "http://#{config[:url]}"
