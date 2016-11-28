@@ -1,5 +1,11 @@
 configure :build do
   config[:url] = "semet.pt"
+
+  activate :robots,
+    rules: [
+      { user_agent: "*", disallow: %w(/) }
+    ],
+    sitemap: "http://#{config[:url]}/sitemap.xml"
 end
 
 activate :deploy do |c|

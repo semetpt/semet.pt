@@ -7,6 +7,7 @@ gem 'middleman-autoprefixer'
 gem 'middleman-deploy', git: 'https://github.com/semetpt/middleman-deploy'
 gem 'middleman-livereload'
 gem 'middleman-sprockets'
+gem 'middleman-robots'
 gem 'rake'
 gem 'slim'
 
