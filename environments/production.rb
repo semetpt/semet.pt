@@ -1,14 +1,18 @@
 configure :build do
-  config[:google_analytics_tracking_id] = "UA-88104955-1";
-  config[:url] = "semet.pt"
+  activate :dotenv,
+    env: ".env.production"
 
-  set :url_root, "http://#{config[:url]}"
+  set :google_analytics_tracking_id, ENV["GOOGLE_ANALYTICS_TRACKING_ID"]
+
+  set :url_protocol, "http"
+  set :url_host, "semet.pt"
+  set :url_root, "#{config[:url_protocol]}://#{config[:url_host]}"
 
   activate :robots,
     rules: [
       { user_agent: "*", allow: %w(/) }
     ],
-    sitemap: "http://#{config[:url]}/sitemap.xml"
+    sitemap: "#{config[:url_root]}/sitemap.xml"
 
   activate :search_engine_sitemap,
     default_change_frequency: "daily"

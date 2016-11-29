@@ -20,3 +20,6 @@
 # Dependencies
 bower_components/
 node_modules/
+
+# Environment definition
+.env.*

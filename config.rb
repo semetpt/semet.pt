@@ -1,3 +1,5 @@
+require "lib/helpers"
+
 ###
 # Page options, layouts, aliases and proxies
 ###
@@ -30,6 +32,8 @@ end
 ###
 # Helpers
 ###
+
+helpers Helpers
 
 # Build-specific configuration
 configure :build do
