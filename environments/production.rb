@@ -6,11 +6,12 @@ configure :build do
 
   activate :robots,
     rules: [
-      { user_agent: "*", disallow: %w(/) }
+      { user_agent: "*", allow: %w(/) }
     ],
     sitemap: "http://#{config[:url]}/sitemap.xml"
 
-  activate :search_engine_sitemap
+  activate :search_engine_sitemap,
+    default_change_frequency: "daily"
 end
 
 activate :deploy do |c|
